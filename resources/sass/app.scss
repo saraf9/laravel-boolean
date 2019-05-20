@@ -1,0 +1,110 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// // Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+*{
+
+  list-style-type: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper{
+
+  margin:auto;
+
+  header{
+
+    display: flex;
+    width: 100%;
+    height: 90px;
+
+    line-height: 90px;
+    border: 1px solid black;
+
+    .logo{
+
+
+      img{
+
+        width:200px;
+        vertical-align: middle;
+      }
+    }
+
+    .navbar{
+
+      display: flex;
+      justify-content: flex-end;
+      width:100%;
+      height: 50px;
+
+
+      .nav-menu{
+
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        margin:0;
+
+        li{
+
+          margin: 0 5px;
+          padding:0 20px;
+          font-size:14px;
+          font-weight: 350;
+        }
+
+
+        .nav-item{
+          text-transform: uppercase;
+
+
+          a{
+
+            text-decoration: none;
+            color: #1B3C59;
+            padding-bottom:7px;
+            max-width: 140px;
+            &:hover{
+
+              border-bottom: 2px solid #61CE4E;
+              cursor: pointer;
+              text-decoration: none;
+
+            }
+          }
+
+        }
+
+        .btn-signup{
+
+          font-weight: 500;
+          text-transform: none;
+          border-radius: 2px;
+          margin: 0 0 0 40px;
+          padding: 0 20px;
+
+
+          a{
+
+            text-decoration: none;
+            color: white;
+            height:90px;
+            background:#F47637;
+
+            &:hover{
+
+              background: lighten( #F47637, 10% );
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
